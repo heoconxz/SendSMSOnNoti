@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "658395824874",
+    "firebase_url": "https://push-sms-1481a.firebaseio.com",
+    "project_id": "push-sms-1481a",
+    "storage_bucket": "push-sms-1481a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658395824874:android:106d7dbf31a92f2fc34d93",
+        "android_client_info": {
+          "package_name": "com.example.sendsmsonnoti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658395824874-br79t48vv98sfb8fb632oopdr7m4oi02.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDx-m6tfdf0hwtF2uJ9az4dtqDnKbdnCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658395824874-br79t48vv98sfb8fb632oopdr7m4oi02.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

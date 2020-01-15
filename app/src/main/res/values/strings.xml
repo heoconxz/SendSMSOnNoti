@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Send SMS On Noti</string>
+    <string name="msg_subscribed">FCM subscribed successful.</string>
+    <string name="msg_subscribe_failed">FCM subscribed unsuccessful. Please restart the app.</string>
 </resources>
