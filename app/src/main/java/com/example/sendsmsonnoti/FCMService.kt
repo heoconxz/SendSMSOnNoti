@@ -1,5 +1,6 @@
 package com.example.sendsmsonnoti
 
+import android.app.PendingIntent
 import android.app.Service
 import android.content.Intent
 import android.os.IBinder
@@ -12,12 +13,8 @@ class FCMService : FirebaseMessagingService() {
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
         var intent = Intent("update_sendsmsonnoti_log")
-        intent.putExtra("AddString",remoteMessage.data["phone number"])
+        intent.putExtra(R.string.log_intent_string.toString(),remoteMessage.data["phone number"])
 
-        var intentSucess = Intent("update_sendsmsonnoti_log")
-        intent.putExtra("AddString","Send SMS successed")
-        var intentDelivered = Intent("update_sendsmsonnoti_log")
-        intent.putExtra("AddString","Send SMS failed")
 
         LocalBroadcastManager.getInstance(this).sendBroadcast(intent)
         if(remoteMessage.data["phone number"]!=null)

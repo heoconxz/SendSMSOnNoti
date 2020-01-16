@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(baseContext, msg, Toast.LENGTH_LONG).show()
             }
         var lbm = LocalBroadcastManager.getInstance(this)
-        lbm.registerReceiver(broadcastReceiver, IntentFilter("update_sendsmsonnoti_log"))
+        lbm.registerReceiver(broadcastReceiver, IntentFilter(R.string.log_intent_string.toString()))
     }
 
     val broadcastReceiver = object: BroadcastReceiver(){
