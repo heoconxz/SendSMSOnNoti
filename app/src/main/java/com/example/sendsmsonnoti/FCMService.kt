@@ -12,8 +12,8 @@ import com.google.firebase.messaging.RemoteMessage
 class FCMService : FirebaseMessagingService() {
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
-        var intent = Intent("update_sendsmsonnoti_log")
-        intent.putExtra(R.string.log_intent_string.toString(),remoteMessage.data["phone number"])
+        var intent = Intent(R.string.log_intent_string.toString())
+        intent.putExtra("AddString",remoteMessage.data["phone number"])
 
 
         LocalBroadcastManager.getInstance(this).sendBroadcast(intent)
